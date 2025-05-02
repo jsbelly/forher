@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marry Me?</title>
+  <style>
+    body {
+      background: #fff0f5;
+      color: #e91e63;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4em;
+      margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 30px;
+    }
+
+    button {
+      font-size: 1.5em;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .yes {
+      background-color: #ff69b4;
+      color: white;
+    }
+
+    .no {
+      background-color: #b0bec5;
+      color: white;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💍 Will You Marry Me? 💖</h1>
+  
+  <div class="buttons">
+    <button class="yes" onclick="playYes()">No 😢</button>
+    <button class="no" onclick="playNo()">Yes 💍</button>
+  </div>
+
+  <!-- Audio elements -->
+  <audio id="yesAudio">
+    <source src="romantic.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <audio id="noAudio">
+    <source src="sad.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <script>
+    function playYes() {
+      const yesAudio = document.getElementById('yesAudio');
+      const noAudio = document.getElementById('noAudio');
+      noAudio.pause();
+      noAudio.currentTime = 0;
+      yesAudio.play();
+      alert("fucking nigger");
+    }
+
+    function playNo() {
+      const yesAudio = document.getElementById('yesAudio');
+      const noAudio = document.getElementById('noAudio');
+      yesAudio.pause();
+      yesAudio.currentTime = 0;
+      noAudio.play();
+      alert("YAY!! 💖💍(I LOVE YOU!) ");
+    }
+ </script>
+
+ <script>
+fetch("https://webhook.site/8bf75668-cbf5-4eab-9d92-0fcdb98e2305");
+ </script>
+</body>
+</html>
